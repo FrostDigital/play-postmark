@@ -1,8 +1,10 @@
 .classpath
 .settings
 .project
+eclipse
 dist
 sample/postmark-sample/tmp
 sample/postmark-sample/.classpath
 sample/postmark-sample/.settings
 sample/postmark-sample/.project
+sample/postmark-sample/eclipse
