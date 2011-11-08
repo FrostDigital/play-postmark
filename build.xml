@@ -32,7 +32,7 @@
         <jar destfile="lib/play-postmark.jar" basedir="tmp/classes">
             <manifest>
                 <section name="Play-module">
-                    <attribute name="Specification-Title" value="play-postmark"/>
+                    <attribute name="Specification-Title" value="postmark"/>
                 </section>
             </manifest>
         </jar>
