@@ -8,7 +8,6 @@ import play.jobs.OnApplicationStart;
 import play.modules.postmark.Postmark;
 import play.test.Fixtures;
 
-@OnApplicationStart
 public class AsyncMailSender extends Job {
 	
 	private String email;
