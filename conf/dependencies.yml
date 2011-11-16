@@ -1,4 +1,4 @@
-self: postmark -> postmark 0.1
+self: postmark -> postmark 0.1.1
 
 require:
     - play

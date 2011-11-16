@@ -12,7 +12,6 @@ public class Postmark {
 	
 	private static final String PROP_API_KEY = "play.postmark.apiKey";
 	private static final String PROP_FROM = "play.postmark.from";
-//	private static final String PROP_LOG_MESSAGES = "play.postmark.log-messages";
 	
 	private static boolean isTest = false;
 	
@@ -28,11 +27,6 @@ public class Postmark {
 	 */
 	private static String from;
 	
-//	/**
-//	 * If sent messages should be logged to default logger (debug)
-//	 */
-//	private static boolean logMessages = false;
-	
 	/**
 	 * Client that communicates with Postmark's REST API.
 	 */
@@ -42,7 +36,6 @@ public class Postmark {
 	public static void init() {
 		apiKey = Play.configuration.getProperty(PROP_API_KEY);
 		from = Play.configuration.getProperty(PROP_FROM);
-//		logMessages= Play.configuration.getProperty(PROP_LOG_MESSAGES);
 
 		if(apiKey != null) {
 			postmarkClient = new PostmarkClient(apiKey);
