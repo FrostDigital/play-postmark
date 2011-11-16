@@ -3,6 +3,7 @@
 .project
 eclipse
 dist
+conf/application.conf
 sample/postmark-sample/tmp
 sample/postmark-sample/.classpath
 sample/postmark-sample/.settings
