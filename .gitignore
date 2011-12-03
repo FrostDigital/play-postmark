@@ -10,3 +10,4 @@ sample/postmark-sample/.settings
 sample/postmark-sample/.project
 sample/postmark-sample/eclipse
 lib/play-postmark.jar
+deploy-to-repo.sh
