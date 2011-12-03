@@ -28,18 +28,18 @@ The module should now be built and you can add it in your **dependencies.yml** b
 Add Frosts module repo to your **dependencies.yml**:
 	
 	require:
-        - postmark -> postmark 0.1
+        - postmark -> postmark 0.1.1
 
     repositories:
 	    - frost:
 	        type: http
-	        artifact: "https://github.com/FrostDigital/module-repo/raw/master/[module]-[revision].zip"
+	        artifact: "http://frostdigital.github.com/module-repo/[module]-[revision].zip"
 	        contains:
 	          - postmark
 
 Now download and sync new deps:
 
-    $ play deps --sync
+    $ play deps --sync 
 
 ## Configuration
 
@@ -50,6 +50,7 @@ Place props in application.conf
     play.postmark.apiKey=POSTMARK_API_TEST
 
     # Default "from" fields in sent mails
+	# Note: this e-mail must be a sender signature in postmarkapp.com
     play.postmark.from=darth@space.com
 
 ## Usage
