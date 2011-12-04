@@ -35,10 +35,10 @@ postmark.from=darth.vader@space.com
 
 If you don't want to run full integration, i.e. not sending actual emails just make sure that your data is valid, in dev/test mode you may utilize postmarks test key:
 
-bc. %prod.postmark.apiKey=POSTMARK_API_TEST
+bc. postmark.apiKey=POSTMARK_API_TEST
 %prod.postmark.apiKey=YOUR-API-KEY-HERE
 # This email must be a valid "sender signature"
-play.postmark.from=darth.vader@space.com
+play.postmark.from=darth@space.com
 
 The plugin will check if test key **POSTMARK_API_TEST** is used and log messages if that is the case. 
 
