@@ -5,4 +5,5 @@ eclipse
 dist
 test-results
 lib
+tmp
 
