@@ -11,4 +11,4 @@ you play application.
 
 ## Getting started
 
-Please read provided documentation.
+Please have a look at the [documentation](https://github.com/FrostDigital/play-postmark/blob/master/documentation/manual/home.textile).
