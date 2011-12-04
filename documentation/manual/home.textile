@@ -37,7 +37,6 @@ If you don't want to run full integration, i.e. not sending actual emails just m
 
 bc. postmark.apiKey=POSTMARK_API_TEST
 %prod.postmark.apiKey=YOUR-API-KEY-HERE
-
 # This email must be a valid "sender signature"
 play.postmark.from=darth@space.com
 
