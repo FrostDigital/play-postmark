@@ -3,11 +3,6 @@
 .project
 eclipse
 dist
-conf/application.conf
-sample/postmark-sample/tmp
-sample/postmark-sample/.classpath
-sample/postmark-sample/.settings
-sample/postmark-sample/.project
-sample/postmark-sample/eclipse
-lib/play-postmark.jar
-deploy-to-repo.sh
+test-results
+lib
+
