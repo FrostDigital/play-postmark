@@ -30,7 +30,6 @@ Add following properties to **/conf/application.conf**:
 
 bc. # Enter you API-key from postmark here
 postmark.apiKey=YOUR-API-KEY-HERE
-\
 # This email must be a valid "sender signature"
 postmark.from=darth.vader@space.com
 
@@ -38,7 +37,7 @@ If you don't want to run full integration, i.e. not sending actual emails just m
 
 bc. postmark.apiKey=POSTMARK_API_TEST
 %prod.postmark.apiKey=YOUR-API-KEY-HERE
-\
+
 # This email must be a valid "sender signature"
 play.postmark.from=darth@space.com
 
