@@ -35,7 +35,7 @@ postmark.from=darth.vader@space.com
 
 If you don't want to run full integration, i.e. not sending actual emails just make sure that your data is valid, in dev/test mode you may utilize postmarks test key:
 
-bc.%prod.postmark.apiKey=POSTMARK_API_TEST
+bc. %prod.postmark.apiKey=POSTMARK_API_TEST
 %prod.postmark.apiKey=YOUR-API-KEY-HERE
 # This email must be a valid "sender signature"
 play.postmark.from=darth.vader@space.com
@@ -44,7 +44,11 @@ The plugin will check if test key **POSTMARK_API_TEST** is used and log messages
 
 h2. Usage
 
-In 
+Use any of the PostmarkSender.sendMail(...) methods. This will create a new job and send mail async.  
+
+Example:
+
+bc. PostmarkSender.sendMail("luke@space.com", "Important!", "Luke, I am your father. \n\nKindly, Darth");
 
 
 
