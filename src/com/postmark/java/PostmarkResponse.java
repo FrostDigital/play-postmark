@@ -33,11 +33,6 @@ import org.joda.time.DateTime;
  * http://github.com/jaredholdcroft/postmark-java
  */
 
-// Enum of possible response statuses
-enum PostmarkStatus {
-    UNKNOWN, SUCCESS, USERERROR, SERVERERROR
-}
-
 // Class that wraps the Postmark response
 
 public class PostmarkResponse {
