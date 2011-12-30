@@ -1,4 +1,4 @@
-self: play -> postmark 1.0
+self: frost -> postmark 1.0
 
 require:
     - play
