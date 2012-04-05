@@ -57,13 +57,8 @@ public class PostmarkSender extends Job {
      * @param body - message content
      */
     public static void sendMail(String from, String to, String subject, String body) {
-    	if(from == null) {
-	 		if(Postmark.ctx.getDefaultFrom() != null) {
-    			from = Postmark.ctx.getDefaultFrom();
-			}
-			else {
-				Logger.error("No 'from' e-mail is set, have you forgot to set property 'postmark.from' in application.conf?")
-			}
+    	if(from == null && Postmark.ctx.getDefaultFrom() != null) {
+    		from = Postmark.ctx.getDefaultFrom();
     	}
     	sendMail(new PostmarkMessage(from, to, null, null, subject, body, false, null));
     }

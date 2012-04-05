@@ -6,5 +6,6 @@ dist
 test-result
 lib
 tmp
+logs
 
 

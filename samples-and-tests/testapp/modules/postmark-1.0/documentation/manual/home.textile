@@ -1,0 +1,55 @@
+h1. Postmark module
+
+Postmark module enables easy integration with "postmarkapp.com":http://postmarkapp.com for handling outgoing emails.
+
+Sending emails can be a hassle. You need to follow best practice in order to avoid spam filters and it is hard to create you own system that track delivery status etc.
+
+Here is how they describe it (from their landing page):
+
+bq. Postmark enables web applications of any size to deliver and track transactional email reliably, with minimal setup time and zero maintenance. We're the experts at getting your emails to the inbox, so you don't have to be.
+
+h2. Enable and configure the module
+
+bq. NOTE: You need to create an account @  "postmarkapp.com":http://postmarkapp.com to be able to use this module. Read more about it "here":http://developer.postmarkapp.com/.
+
+Add the following dependency to **/conf/dependencies.yml**:
+
+bc. - play -> postmark 1.0
+
+Now sync dependencies and module will be downloaded:
+
+bc. play deps --sync 
+
+As of Play 1.2.4 you may add flag **--forProd** to exclude docs and sample app from module:
+
+bc. play deps --sync --forProd
+
+h3. Configuration
+
+Add following properties to **/conf/application.conf**:
+
+bc. # Enter you API-key from postmark here
+postmark.apiKey=YOUR-API-KEY-HERE
+# This email must be a valid "sender signature"
+postmark.from=darth@space.com
+
+If you don't want to run full integration, i.e. not sending actual emails just make sure that your data is valid, in dev/test mode you may utilize postmarks test key:
+
+bc. postmark.apiKey=POSTMARK_API_TEST
+%prod.postmark.apiKey=YOUR-API-KEY-HERE
+# This email must be a valid "sender signature"
+play.postmark.from=darth@space.com
+
+The plugin will check if test key **POSTMARK_API_TEST** is used and log messages if that is the case. 
+
+h2. Usage
+
+Use any of the PostmarkSender.sendMail(...) methods. This will create a new job and send mail async.  
+
+Example:
+
+bc. PostmarkSender.sendMail("luke@space.com", "Important!", "Luke, I am your father. \n\nKindly, Darth");
+
+
+
+	

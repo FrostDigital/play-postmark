@@ -1,0 +1,6 @@
+self: play -> postmark 1.0
+
+require:
+    - play
+    - org.apache.httpcomponents -> httpclient 4.0.1
+    
